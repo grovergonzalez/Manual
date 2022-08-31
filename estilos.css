@@ -1,8 +1,15 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(fondo1.jpg);
-    background-size: cover;
+    background: url(fondo2.jpg);
+    background-size: contain;
     background-position: center;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+.htmlimage{
+    text-align: center;
+    display: block;
+    width: 350px;
+    height: 350px;
 }
