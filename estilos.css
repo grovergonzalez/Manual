@@ -5,6 +5,7 @@ body{
     background-size: cover;
     background-position: center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: large;
     display: flex;
 }
 .htmlimage{
@@ -13,8 +14,19 @@ body{
     width: 600px;
     height: 350px;
     font-weight: auto;
+    text-rendering: auto;
+    image-rendering: auto;
 }
 
 tr{
     text-align: center;
+}
+
+td{
+    text-rendering: auto;
+}
+img
+{
+    text-rendering: auto;
+    image-rendering: auto;
 }
