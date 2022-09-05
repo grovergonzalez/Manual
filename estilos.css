@@ -29,9 +29,12 @@ td{
     text-rendering: auto;
 }
 th{
-    color: gold;
+    background-color: rgb(236, 11, 187);
+    color: black;
+    border: 2px solid white;
+    border-collapse: collapse;
 }
-table, th, td{
+table, td{
     border: 2px solid white;
     border-collapse: collapse;
 }
