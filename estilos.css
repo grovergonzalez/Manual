@@ -5,9 +5,8 @@ body{
     background-size: 100%;
     background-position: center;
     font-family: monospace;
-    font-size: large;
+    font-size: x-large;
     font-display: white;
-    display: flex;
     color: red;
 }
 .htmlimage{
@@ -50,4 +49,39 @@ a{
 }
 table{
     width: 70%;
+}
+
+.enlaces{
+    background-color: black;
+}
+.enlaces ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.enlaces ul li{
+    display: inline-block;
+  }
+.enlaces ul li a{
+    color: rgb(126, 255, 161);
+    text-decoration: none;
+    display: block;
+    padding: 20px 136px;
+}
+
+.enlaces ul li a:hover{
+    background-color: rgb(92, 120, 235);
+}
+
+.header1{
+    color: white;
+}
+.header2{
+    color: white;
+}
+.header3{
+    color: white;
+}
+.header4{
+    color: white;
 }

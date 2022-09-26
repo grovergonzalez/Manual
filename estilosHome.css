@@ -1,0 +1,34 @@
+body{
+
+    background-size: 100%;
+    background-color: #1E2022;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #71C9CE;
+}
+.enlaces{
+    background-color: #393E46;
+    margin-top:10%;
+}
+.enlaces ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.enlaces ul li{
+    display: inline-flex;
+  }
+.enlaces ul li a{
+    color: #71C9CE;
+    text-decoration: none;
+    font-size: xx-large;
+    display: flex;
+    padding: 20px 430px;
+}
+
+.enlaces ul li a:hover{
+    background-color: #3F72AF;
+}
+footer{
+
+    text-align: center;
+}
