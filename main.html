@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>MANUAL HTML</title>
+</head>
+
+<body>
+    <div>
+        <center>
+            <div>
+                <h1 id="Recursos"> RECURSOS PARA DESARROLLADORES </h1>
+
+                <center><a href="index.html"><img class="inicio" src="png-transparent-computer-icons-house-angle-desktop-wallpaper-home-icon-removebg-preview.png" width="540px"></a></center>
+                <center><h1 style="color: #71C9CE; font-size: 55px;">INICIO</h1></center>
+
+                <div>
+                    <nav class="menu">
+                        <ul class="enlaces">
+                            <li> <a class="header1" href="#Recursos">RECURSOS</a> </li>
+                            <li> <a class="header2" href="#Elementos Semanticos">ELEMENTOS SEMANTICOS</a> </li>
+                            <li> <a class="header3" href="#Manejo de Texto">MANEJO DE TEXTO</a> </li>
+                            <li> <a class="header4" href="#Elementos Genericos">ELEMENTOS GENERICOS</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <br><br><br>
+                <img class="htmlimage"
+                    src="data:image/png;base64,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">
+                <br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MDN</td>
+                            <td>Documentacion sobre css, html, JavaScripts y Apis web </td>
+                            <td><a href="https://html.spec.whatwg.org/#the-document-object" target="_blank">Ir a pagina</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HTML STANDARD</td>
+                            <td> Especificacion de HTML</td>
+                            <td><a href="https://html.spec.whatwg.org/#toc-semantics" target="_blank">Ir a pagina</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           
+            <div>
+                <br><br>
+                <hr>
+                <footer>
+                    <address> <strong> <i> GROVER LEONARDO GONZALEZ FERNANDEZ </i> </strong> </address>
+                    <br>
+                    <address> <strong> <i> <a href="mailto:grover.gonzalez@ucb.edu.bo" target="_blank">grover.gonzalez@ucb.edu.bo </a> </i> </strong> </address>
+                </footer>
+                <hr>
+                <br><br>
+            </div>
+            
+            
+            <div>
+                <h1> ELEMENTOS HTML </h1>
+                <br><br>
+            </div>
+
+            
+            <div>
+                <h1 id="Elementos Semanticos"> ELEMENTOS SEMANTICOS </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Descripción</th>
+                            <th>Documentación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>header</td>
+                            <td>Describe un contenido destinado a la parte superior o encabezado de la página </td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+                                    target="_blank">header</a></td>
+                        </tr>
+                        <tr>
+                            <td>article</td>
+                            <td>Representa una composición auto-contenida en un documento, página, una aplicación o en el
+                                sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la
+                                indicación.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+                                    target="_BLANK">article</a></td>
+                        </tr>
+                        <tr>
+                            <td>section</td>
+                            <td>El elemento de HTML section (section) representa una sección genérica de un documento. Sirve para
+                                determinar qué contenido corresponde a qué parte de un esquema.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/section" target="_blank">section</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>nav</td>
+                            <td>Representa una seccion de la paguna, la cual tiene el proposito de proporcionar links de
+                                navegacion.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_BLANK">nav</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>aside</td>
+                            <td>Representa una parte de un documento cuyo contenido solo está indirectamente relacionado con el
+                                contenido que lo rodea</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">aside</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>footer</td>
+                            <td>Representa un pie de página para el contenido de sección más cercano o el elemento o para el
+                                elemento body</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
+                                    target="_blank">footer</a></td>
+                        </tr>
+                        <tr>
+                            <td>main</td>
+                            <td>Representa los contenidos dominantes del documento</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">main</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+            <div>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <h1 id="Manejo de Texto"> MANEJO DE TEXTO </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Descripcion</th>
+                            <th>Documentacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>h1-h6</td>
+                            <td>Los elementos de encabezado implementan seis niveles de encabezado del documento.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+                                    target="_BLANK">h1-h6</a></td>
+                        </tr>
+                        <tr>
+                            <td>title</td>
+                            <td>Al igual que el título de la página (<"title">), los encabezados son una de las piezas de información que utilizan los motores de búsqueda para indexar las  páginas web y, por lo tanto, deben reflejar fielmente el contenido </td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">title</a></td>
+                        </tr>
+                        <tr>
+                            <td>p</td>
+                            <td>Este elemento representa un parrafo.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_BLANK">p</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>br</td>
+                            <td>Representa un salto de linea en el documento .</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_BLANK">br</a></td>
+                        </tr>
+                        <tr>
+                            <td>hr</td>
+                            <td>Representa una transición entre párrafos a un tema separado, pero relacionado</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_BLANK">hr</a></td>
+                        </tr>
+                        <tr>
+                            <td>wbr</td>
+                            <td>Le indica al navegador donde podría razonablemente insertar un salto de línea para ajustar el contenido que es más grande que la ventana actual del navegador. Es el navegador el que toma la decisión de si realmente se utiliza o no un salto de línea</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_BLANK">wbr</a></td>
+                        </tr>
+                        <tr>
+                            <td>sup</td>
+                            <td>El elemento HTML sup define un fragmento de texto que se debe mostrar, por razones tipográficas, más
+                                alto, y generalmente más pequeño, que el tramo principal del texto, es decir, en superíndice.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sup" target="_blank">sup</a></td>
+                        </tr>
+                        <tr>
+                            <td>sub</td>
+                            <td>El elemento HTML sub define un fragmento de texto que se debe mostrar, por razones tipográficas, más
+                                bajo, y generalmente más pequeño, que el tramo principal del texto, es decir, en subíndice.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sub" target="_blank">sub</a></td>
+                        </tr>
+                        <tr>
+                            <td>strong</td>
+                            <td>El elemento strong es el apropiado para marcar con especial énfasis las partes más importantes de un
+                                texto. </td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/strong" target="_blank">strong</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>em</td>
+                            <td>En HTML usamos el elemento em («emphasis») para marcar estos casos</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">em</td>
+                        </tr>
+                        <tr>
+                            <td>mark</td>
+                            <td>Permite resaltar texto de interés. Piense en esto como si usara un resaltador en un libro para marcar pasajes que encuentre de interés</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">mark</a></td>
+                        </tr>
+                        <tr>
+                            <td>q</td>
+                            <td>El elemento HTML q indica que el texto adjunto es una cita corta en línea. La mayoría de los
+                                navegadores modernos implementan esto rodeando el texto entre comillas. Este elemento está destinado
+                                a citas breves que no requieren saltos de párrafo.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/q" target="_blank">q</a></td>
+                        </tr>
+                        <tr>
+                            <td>blockquote</td>
+                            <td>El elemento blockquote indica que el texto contenido es una cita extensa</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">blockquote</a></td>
+                        </tr>
+                        <tr>
+                            <td>cite</td>
+                            <td>Permite incluir el nombre de un trabajo (Un libro, un ensayo, un poema, una película, una pintura, un programa de computadora, etc.)</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">cite</a></td>
+                        </tr>
+                        <tr>
+                            <td>dfn</td>
+                            <td>Se utiliza para identificar el término a definir, mientras que la definición del término se coloca fuera del elemento</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn">dfn</a></td>
+                        </tr>
+                        <tr>
+                            <td>abbr</td>
+                            <td>Representa una abreviación o acrónimo</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_BLANK">abbr</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>small</td>
+                            <td>El elemento HTML small hace el tamaño del texto una talla más pequeña (por ejemplo, de largo a
+                                mediano, o de pequeño a extra pequeño) que el tamaño mínimo de fuente del navegador. </td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/small" target="_blank">small</a>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>ins</td>
+                            <td>Marca las partes de un texto que han sido añadidos al documento</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">ins</a></td>
+                        </tr>
+                        <tr>
+                            <td>del</td>
+                            <td>Marca las partes de un texto que han sido eliminadas del documento</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank"></a></td>
+                        </tr>
+                        <tr>
+                            <td>s</td>
+                            <td>Muestra el texto tachado con una linea horizontal.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/s" target="_blank">s</a></td>
+                        </tr>
+                        <tr>
+                            <td>code</td>
+                            <td>Muestra su contenido con formato para indicar que el texto es un fragmento corto de código de computadora</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">code</a></td>
+                        </tr>
+                        <tr>
+                            <td>samp</td>
+                            <td>El elemento HTML Sample (samp) se utiliza para incluir texto en línea que representa una muestra (o cita) de la salida de un programa de ordenador.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/samp" target="_blank">samp</a></td>
+                        </tr>
+                        <tr>
+                            <td>kbd</td>
+                            <td>representa un fragmento de texto en línea que indica la entrada del usuario desde un teclado (Aunque también se puede usar para representar otra entrada, como los comandos de voz)</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank">kbd</a></td>
+                        </tr>
+                        <tr>
+                            <td>pre</td>
+                            <td>El Elemento HTML pre (o Texto HTML Preformateado) representa texto preformateado. El texto en este
+                                elemento típicamente se muestra en una fuente fija, no proporcional, exactamente como es mostrado en
+                                el archivo.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/pre" target="_blank">pre</a></td>
+                        </tr>
+                        <tr>
+                            <td>address</td>
+                            <td>Indica que el HTML contenido proporciona información de contacto para una persona o personas, o para una organización</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">address</a></td>
+                        </tr>
+                        <tr>
+                            <td>style</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div>
+                <br>
+                <br>
+                <br>
+            </div>
+            
+            <div>
+                <h1 id="Elementos Genericos">ELEMENTOS GENERICOS Y OTROS </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Descripcion</th>
+                            <th>Documentacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>html</td>
+                            <td>Representa la raiz del documento HTML</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_BLANK">html</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>Crea un enlace a otras páginas de internet, o cualquier otra URL.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_BLANK">a</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>head</td>
+                            <td>Contiene lo que no se ve en la pagina web</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_BLANK">head</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>area</td>
+                            <td>Sirve para crear las distintas secciones</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" target="_BLANK">area</a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>body</td>
+                            <td>Representa el contenido de un documento HTML. Solo puede haber un elemento en un documento.
+                            </td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_BLANK">body</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>button</td>
+                            <td>Representa un elemento de tipo botón que puede ser utilizado en formularios o en cualquier
+                                parte
+                                de las páginas.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
+                                    target="_BLANK">button</a></td>
+                        </tr>
+                        <tr>
+                            <td>div</td>
+                            <td>Sirve para crear secciones o agrupar contenidos.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_BLANK">div</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>form</td>
+                            <td>Sirve para representar una seccion de un documento que contiene controles interactivos para
+                                poder subir informacion.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_BLANK">form</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>header</td>
+                            <td>Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos
+                                elementos
+                                de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y
+                                otros
+                                componentes.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+                                    target="_BLANK">header</a></td>
+                        </tr>
+                        <tr>
+                            <td>input</td>
+                            <td>Se usa para crear controles interactivos para formularios basados en la web con el fin de
+                                recibir datos del usuario.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_BLANK">input</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>img</td>
+                            <td>Representa una imagen en el documento.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_BLANK">img</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>li</td>
+                            <td>Es usado para representar un elemento en una lista</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_BLANK">li</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>meta</td>
+                            <td>Aporta información sobre el documento.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_BLANK">meta</a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>ol</td>
+                            <td>Representa elementos ordenados en una lista.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_BLANK">ol</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>span</td>
+                            <td>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.
+                            </td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_BLANK">span</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>table</td>
+                            <td>Representa informacion tabular. Representa datos en dos o mas dimensiones</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_BLANK">table</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>tbody</td>
+                            <td>Encapsula un conjunto de filas de tabla</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_BLANK">tbody</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>thead</td>
+                            <td>Define un conjunto de filas que definen la cabecera de las columnas de la tabla</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_BLANK">thead</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ul</td>
+                            <td>Representa elementos desordenados en una lista.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_BLANK">ul</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>progress</td>
+                            <td>La etiqueta HTML progress se utiliza para visualizar el progreso de una tarea. Aunque los detalles
+                                de como se muestran depende directamente del navegador que utiliza el cliente, aunque básicamente
+                                aparece una barra de progreso.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/progress"
+                                    target="_blank">progress</a></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td>script</td>
+                            <td>no hay developer mizilla</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/script" target="_blank">script</a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>select</td>
+                            <td>El elemento select (select) de HTML representa un control que muestra un menú de opciones. Las
+                                opciones contenidas en el menú son representadas por elementos option, los cuales pueden ser
+                                agrupados por elementos optgroup (en-US). La opcion puede estar preseleccionada por el usuario.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/select" target="_blank">select</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>template</td>
+                            <td>El elemento HTML template es un mecanismo para mantener el contenido HTML del lado del cliente que
+                                no se renderiza cuando se carga una página, pero que posteriormente puede ser instanciado durante el
+                                tiempo de ejecución empleando JavaScript.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/template"
+                                    target="_blank">template</a></td>
+                        </tr>
+                        <tr>
+                            <td>textarea</td>
+                            <td>El elemento HTML textarea representa un control para la edición mutilínea de texto sin formato.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea"
+                                    target="_blank">textarea</a></td>
+                        </tr>
+                        <tr>
+                            <td>time</td>
+                            <td>El elemento HTML time representa un periodo específico en el tiempo. Puede incluir el atributo
+                                datetime para convertir las fechas en un formato interno legible por un ordenador, permitiendo
+                                mejores resultados en los motores de búsqueda o características personalizadas como recordatorios.
+                            </td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/time" target="_blank">time</a></td>
+                        </tr>
+                        <tr>
+                            <td>u</td>
+                            <td>Muestra el texto subrayado.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/u" target="_blank">u</a></td>
+                        </tr>
+                        <tr>
+                            <td>ul</td>
+                            <td>ul de "unordered list" -lista no ordenada . crea una lista no ordenada.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul" target="_blank">ul</a></td>
+                        </tr>
+                        <tr>
+                            <td>var</td>
+                            <td>Marca variables de programas y similares.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/var" target="_blank">var</a></td>
+                        </tr>
+                        <tr>
+                            <td>video</td>
+                            <td>El elemento video se utiliza para incrustar vídeos en un documento HTML o XHTML.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video" target="_blank">video</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>wbr</td>
+                            <td>El elemento HTML word break opportunity wbr representa una posición dentro del texto donde el
+                                explorador puede opcionalmente saltar una línea , aunque sus reglas de salto de línea de otra manera
+                                no crearían un salto en esa posición .</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr" target="_blank">wbr</a></td>
+                        </tr>
+                        <tr>
+                            <td>area</td>
+                            <td>Sirve para crear las distintas secciones en las que se puede dividir un mapas de imágenes en el
+                                cliente.</td>
+                            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/area" target="_blank">area</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos1.css">
+    <title>CSS</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">RECURSOS PARA DESARROLLADORES</h1>
+        <center><a href="index.html"><img class="inicio" src="png-transparent-computer-icons-house-angle-desktop-wallpaper-home-icon-removebg-preview.png" width="540px"></a></center>
+        <center><h1 style="color: #71C9CE; font-size: 55px;">INICIO</h1></center>
+        <br><br><br>
+        <div class="enlaces">
+            <ul>
+                <div>
+                    <li> <a class="header1" href="#Colores">COLORES</a> </li>
+                    <li> <a class="header2" href="#Selectores">SELECTORES</a> </li>
+                    <li> <a class="header3" href="#Modelos de cajas">MODELOS DE CAJAS</a> </li>
+                </div>
+            </ul>  
+        </div>
+
+
+        <br><br><br>
+
+        <center>
+         <img class="CSSimage" src="css.png">
+        </center>
+
+        <div>
+            <center>
+                <br><br>
+                    <hr>
+                        <footer>
+                            <address class="nombre"> <strong> <i> GROVER LEONARDO GONZALEZ FERNANDEZ </i> </strong> </address>
+                            <br>
+                            <address class="mail"> <strong> <i> <a href="mailto:grover.gonzalez@ucb.edu.bo" target="_blank">grover.gonzalez@ucb.edu.bo </a> </i> </strong> </address>
+                        </footer>
+                    <hr>
+                <br><br>
+            </center>
+        </div>
+
+        <div>
+            <h2 class="Colores"> COLORES </h2>
+            <center>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Descripción</th>
+                            <th>Informacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Color</td>
+                            <td>Podemos especificar un color usando un nombre predefinido. Por ejemplo podemos especificar que el color del párrafo sea rojo con la siguiente regla:</td>
+                            <td>
+                                <code>
+                                    elemento{ color:"color" }
+                                    elemento{ color: red }
+                                </code>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>rgb</td>
+                            <td>Podemos establecer el valor de un color mezclando diferentes intensidades de los tres colores
+                                primarios: "rojo, verde, azul"</td>
+                            <td>
+                                <code>
+                                    elemento{
+                                        color: rgb(red, green, blue)
+                                    }
+                                    elemento{
+                                        color: rgb(40, 15, 27);
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>rgba</td>
+                            <td>Podemos definir la transparencia de un color usando la función rgba, 
+                                esta función es idéntica a la función rgb, 
+                                pero con un parámetro adicional denominado opacidad,  para especificar la transparencia.
+                            </td>
+                            <td>
+                                <code>
+                                    elemento{
+                                        color: rgba(r, g, b, a);
+                                    }
+                                    elemento{
+                                        color: rgba(12, 48, 92, 0);
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>hexadecimal</td>
+                            <td>Podemos utilizar un número hexadecimal para definir un color.
+                                Es una alternativa a la función rgb, 
+                                es decir permite definir un color como la mezcla de intensidades de los colores primarios
+                            </td>
+                            <td>
+                                <code>
+                                    elemento{
+                                        color: #numero-hexadecimal;
+                                    }
+                                    elemento{
+                                        color: #ff1500;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>hsl</td>
+                            <td>En este modelo utilizamos conceptos que son más fáciles de comprender.
+                                En CSS para poder trabajar con este modelo tenemos la siguiente opción:
+                            </td>
+                            <td>
+                                <code>
+                                    elemento{
+                                        color: hsl(h, s, l);
+                                    }
+                                    elemento{
+                                        color: hsl(360, 58%, 37%);
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>hsla</td>
+                            <td>Podemos definir la transparencia de un color usando la función hsla, esta función es idéntica a
+                                la función hsl, pero con un parámetro adicional denominado opacidad, para especificar la
+                                transparencia.
+                            </td>
+                            <td>
+                                <code>
+                                    elemento{
+                                        color: hsla(h, s, l, a);
+                                    }
+                                    elemento{
+                                        color: hsl(360, 58%, 37%, 1);
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+
+        <br><br><br>
+
+        <div>
+            <h2 class="Selectores"> SELECTORES </h2>
+            <center>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Descripción</th>
+                            <th>Informacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Selector Universal "*"</td>
+                            <td>Selecciona todos los elementos. </td>
+                            <td>
+                                <code>
+                                    *{
+                                        declaraciones CSS;
+                                    }
+                                    *{
+                                        color: green;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Selector de Tipo "p"</td>
+                            <td>Permite seleccionar elementos usando el nombre del elemento.</td>
+                            <td>
+                                <code>
+                                    nombre_elemento{
+                                        declaraciones CSS;
+                                    }
+                                    p{
+                                        color: red;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Selector de clase ".foo"</td>
+                            <td>Permite seleccionar elementos en función de los valores del atributo class de los elementos.
+                                Para que los elementos sean seleccionados, su atributo class debe incluir un valor que coincida
+                                con el valor del selector. </td>
+                            <td>
+                                <code>
+                                    .foo{
+                                        color: blue;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Selector de ID "#foo"</td>
+                            <td>Permite seleccionar un elemento en función del valor del atributo ID del elemento. Para que el
+                                elemento sea seleccionado, su atributo id debe coincidir exactamente con el valor dado en el
+                                selector. </td>
+                            <td>
+                                <code>
+                                    #foo{
+                                        color: blue;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Selector de atributo "a[foo]"</td>
+                            <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo.
+                            </td>
+                            <td>
+                                <code>
+                                    #foo{
+                                        background-color: black;
+                                     }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Selecciona elementos que tengan un atributo con el nombre attr. </td>
+                            <td>
+                                <code>
+                                    selector[attr]{
+                                        declaraciones CSS;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Selecciona elementos que tengan un atributo con el nombre attr. El único valor del atributo es
+                                exactamente value. </td>
+                            <td>
+                                <code>
+                                    selector[attr=value]{
+                                        declaraciones CSS;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>selector[attr~=value] { … }
+                                Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del
+                                atributo es exactamente value. </td>
+                            <td>
+                                <code>
+                                    selector[attr~=value]{
+                                        declaraciones CSS;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Selecciona los elementos que tengan un atributo con el nombre attr. El primero de los valores
+                                del atributo empieza con value.</td>
+                            <td>
+                                <code>
+                                    selector[attr^=value]{
+                                        declaraciones CSS;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Selecciona los elementos que tengan un atributo con el nombre attr. El último de los valores
+                                del atributo termina con value.</td>
+                            <td>
+                                <code>
+                                    selector[attr$=value]{
+                                        declaraciones CSS;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del
+                                atributo contiene al menos una ocurrencia de value.</td>
+                            <td>
+                                <code>
+                                    selector[attr*=value]{
+                                        declaraciones CSS;
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+
+        <br><br><br>
+
+        <div>
+            <h2>PSEUDO-CLASES</h2>
+            <div class="pseudoclases">
+                <p>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el
+                    documento(:nth-child) e interacción del usuario(:hover). Ejemplo:</p>
+                <p> 
+                    <code>
+                        <center> 
+                            <mark>
+                                " button:hover {
+                                    color: blue;
+                                } " 
+                            </mark>
+                        </center>                
+                    </code>
+                </p>
+            </div>
+
+        <div>
+            <h2 class="Modelos de cajas"> MODELO DE CAJAS </h2>
+            <center>
+                <table style="width: 100%">
+            
+                    <thead>
+                        <tr>
+                            <th>Partes</th>
+                            <th>Definición</th>
+                            <th colspan="2">Propiedades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">Contenido</td>
+                            <td rowspan="4">Área donde se encuentra el contenido del elemento(texto, imagen, etc)</td>
+                            <td>min-width</td>
+                            <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank"><font color="red">width</font></a></td>
+                        </tr>
+                        <tr>
+                            <td>max-width</td>
+                        </tr>
+                        <tr>
+                            <td>min-height</td>
+                            <td rowspan="2"><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target="_blank"><font color="red">height</font></a></td>
+                        </tr>
+                        <tr>
+                            <td>max-height</td>
+                        </tr>
+        
+                        <tr>
+                            <td rowspan="4">Relleno</td>
+                            <td rowspan="4">Es el área de relleno del elemento.</td>
+                            <td>padding-top</td>
+                            <td rowspan="4"><a href="https://www.w3schools.com/css/css_padding.asp"><font color="red">padding</font></a></td>
+                        </tr>
+                        <tr>
+                            <td>padding-right</td>
+                        </tr>
+                        <tr>
+                            <td>padding-bottom</td>
+                        </tr>
+                        <tr>
+                            <td>padding-left</td>
+                        </tr>
+        
+                        <tr>
+                            <td rowspan="3">Borde</td>
+                            <td rowspan="3">Es el borde del elemento.</td>
+                            <td>border-width</td>
+                            <td rowspan="3"><a href="https://www.w3schools.com/css/css_border.asp" target="_blank"><font color="red">border</font></a></td>
+                        </tr>
+                        <tr>
+                            <td>border-style</td>
+                        </tr>
+                        <tr>
+                            <td>border-color</td>
+                        </tr>
+        
+                        <tr>
+                            <td rowspan="4">Margen</td>
+                            <td rowspan="4">Es el margen del elemento.</td>
+                            <td>margin-top</td>
+                            <td rowspan="4"><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank"><font color="red">margin</font></a></td>
+                        </tr>
+                        <tr>
+                            <td>margin-right</td>
+                        </tr>
+                        <tr>
+                            <td>margin-bottom</td>
+                        </tr>
+                        <tr>
+                            <td>margin-left</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
